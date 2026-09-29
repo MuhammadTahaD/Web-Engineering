@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Table</title>
+    <style>
+        table {
+            width: 50%;
+            margin: 0px auto;
+            border: 1px solid gray;
+            background-color: lightgoldenrodyellow;
+        }
+
+        th {
+            border-right: 1px solid gray;
+            background-color: gray;
+        }
+
+        td {
+            border-right: 1px solid gray;
+            border-bottom: 1px solid gray;
+        }
+
+        header {
+            text-align: center;
+            background-color: lightgray;
+            height: 20%;
+            border: 2px solid gray;
+
+        }
+
+        main {
+            height: 70%;
+            width: 70%;
+            border: 2px solid green;
+            float: left;
+            margin: 2px;
+            background-color: lightcyan;
+        }
+
+        aside {
+            width: 28%;
+            border: 2px solid rgb(128, 0, 32);
+            float: left;
+            background-color: lightyellow;
+        }
+
+        footer {
+            background-color: lightgray;
+            height: 20%;
+            border: 2px solid gray;
+            clear: both;
+        }
+
+        li {
+            list-style-type: circle;
+        }
+
+        nav ul {}
+
+        nav ul li {
+            color: green;
+            font-weight: bold;
+            list-style: none;
+            display: inline;
+            padding: 40px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h3> HTML Tags</h3>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="table.html">HTML Tags</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th colspan="2">Last Name</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Zakir</td>
+                    <td colspan="2"> Ullah </td>
+
+                </tr>
+                <tr>
+                    <td>Adbullah</td>
+                    <td>Khan</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Manahil</td>
+                    <td>Deotani</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Shanza</td>
+                    <td>Jamali</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Samiram</td>
+                    <td colspan="2">Tariq Baloch</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Muhammad Ruman Ul Haq</td>
+                    <td>ABC</td>
+                    <td>XYZ</td>
+                </tr>
+                <tr>
+                    <td>23423</td>
+                    <td>234</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+    <aside>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ol>
+    </aside>
+    <footer>
+        Footer
+    </footer>
+</body>
+
+</html>

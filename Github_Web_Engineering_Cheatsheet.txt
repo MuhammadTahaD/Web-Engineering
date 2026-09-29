@@ -1,0 +1,422 @@
+============================================================
+WEB ENGINEERING - GITHUB COMMAND CHEATSHEET
+============================================================
+
+MAIN REPOSITORY:
+E:/Semester_05/4. Web_Engineering
+
+GITHUB:
+https://github.com/MuhammadTahaD/Web-Engineering.git
+
+IMPORTANT:
+DO NOT run "git init" inside Labs, Assignments, Projects, etc.
+There should be ONLY ONE .git folder:
+
+Web_Engineering/.git
+============================================================
+
+
+1. STARTING A NEW LAB
+============================================================
+
+Go to the main repository:
+
+cd "E:/Semester_05/4. Web_Engineering"
+
+Create the lab folder if needed:
+
+mkdir -p "Labs/04"
+
+Go into it:
+
+cd "Labs/04"
+
+Work on your files normally.
+
+IMPORTANT:
+DO NOT run git init here.
+
+
+============================================================
+2. PUSH A COMPLETED LAB
+============================================================
+
+Go back to the main repository:
+
+cd "E:/Semester_05/4. Web_Engineering"
+
+Check what changed:
+
+git status
+
+Add the files:
+
+git add .
+
+Commit:
+
+git commit -m "Add Web Engineering Lab 04"
+
+Push:
+
+git push
+
+
+============================================================
+3. PUSH A NEW ASSIGNMENT
+============================================================
+
+Recommended structure:
+
+Web_Engineering/
+└── Assignments/
+    ├── Assignment_01/
+    ├── Assignment_02/
+    └── Assignment_03/
+
+Create a folder:
+
+cd "E:/Semester_05/4. Web_Engineering"
+mkdir -p "Assignments/Assignment_01"
+
+Put your files inside it.
+
+Then:
+
+git status
+git add .
+git commit -m "Add Assignment 01"
+git push
+
+
+============================================================
+4. PUSH A PROJECT
+============================================================
+
+Recommended structure:
+
+Web_Engineering/
+└── Projects/
+    ├── Project_01/
+    ├── Project_02/
+    └── Project_03/
+
+Create project folder:
+
+cd "E:/Semester_05/4. Web_Engineering"
+mkdir -p "Projects/Project_01"
+
+Put your project files inside it.
+
+Then:
+
+git status
+git add .
+git commit -m "Add Project 01"
+git push
+
+
+============================================================
+5. PUSH ANY CHANGES
+============================================================
+
+If you don't care about the specific files and simply want
+to push all changes:
+
+cd "E:/Semester_05/4. Web_Engineering"
+
+git status
+git add .
+git commit -m "Update Web Engineering work"
+git push
+
+
+============================================================
+6. CHECK BEFORE PUSHING
+============================================================
+
+Always check:
+
+git status
+
+See which files Git is tracking:
+
+git ls-files
+
+Check the repository location:
+
+git rev-parse --show-toplevel
+
+Expected:
+
+E:/Semester_05/4. Web_Engineering
+
+Check GitHub remote:
+
+git remote -v
+
+Expected:
+
+origin  https://github.com/MuhammadTahaD/Web-Engineering.git
+origin  https://github.com/MuhammadTahaD/Web-Engineering.git
+
+
+============================================================
+7. CHECK FOR ACCIDENTAL NESTED REPOSITORIES
+============================================================
+
+Run:
+
+find . -type d -name ".git"
+
+EXPECTED OUTPUT:
+
+./.git
+
+If you see:
+
+./.git
+./Labs/01/.git
+./Labs/02/.git
+./Projects/Project_01/.git
+
+then STOP.
+
+Do NOT push.
+
+You have accidentally created nested Git repositories.
+
+
+============================================================
+8. IF YOU ACCIDENTALLY RUN "git init"
+============================================================
+
+Example:
+
+cd Labs/04
+git init
+
+WRONG.
+
+Remove ONLY the Git metadata:
+
+rm -rf .git
+
+IMPORTANT:
+This does NOT delete your project/lab files.
+
+Then return to the main repository:
+
+cd ../..
+
+Check:
+
+git status
+
+
+============================================================
+9. CHECK CURRENT BRANCH
+============================================================
+
+git branch
+
+You should normally see:
+
+* main
+
+If you're on master:
+
+git branch -M main
+
+
+============================================================
+10. IF REMOTE ORIGIN IS MISSING
+============================================================
+
+Check:
+
+git remote -v
+
+If nothing appears:
+
+git remote add origin https://github.com/MuhammadTahaD/Web-Engineering.git
+
+Then:
+
+git push -u origin main
+
+After that, normal pushes only require:
+
+git push
+
+
+============================================================
+11. FIRST-TIME SETUP ONLY
+============================================================
+
+You normally DON'T need these again.
+
+Configure Git identity:
+
+git config --global user.name "Muhammad Taha"
+git config --global user.email "YOUR_GITHUB_EMAIL"
+
+Check:
+
+git config --global user.name
+git config --global user.email
+
+
+============================================================
+12. IF "FETCH FIRST" ERROR APPEARS
+============================================================
+
+Error:
+
+! [rejected] main -> main (fetch first)
+
+DO NOT immediately use:
+
+git push --force
+
+Instead:
+
+git pull origin main --allow-unrelated-histories
+
+If Git opens Vim:
+
+Press:
+Esc
+
+Type:
+
+:wq
+
+Press Enter.
+
+Then:
+
+git push
+
+
+============================================================
+13. NORMAL DAILY WORKFLOW
+============================================================
+
+This is the most important one.
+
+Whenever you finish work:
+
+cd "E:/Semester_05/4. Web_Engineering"
+
+git status
+
+git add .
+
+git commit -m "Describe what you changed"
+
+git push
+
+
+============================================================
+14. EXAMPLE COMMIT MESSAGES
+============================================================
+
+Lab:
+
+git commit -m "Add Web Engineering Lab 04"
+
+Assignment:
+
+git commit -m "Add Assignment 02"
+
+Project:
+
+git commit -m "Add HTML recipe project"
+
+CSS:
+
+git commit -m "Add CSS styling practice"
+
+JavaScript:
+
+git commit -m "Add JavaScript array practice"
+
+React:
+
+git commit -m "Add React components practice"
+
+Fix:
+
+git commit -m "Fix navigation issue"
+
+Update:
+
+git commit -m "Update Lab 03"
+
+
+============================================================
+15. RECOMMENDED FINAL STRUCTURE
+============================================================
+
+Web_Engineering/
+│
+├── .git/
+│
+├── Labs/
+│   ├── 01/
+│   ├── 02/
+│   ├── 03/
+│   └── 04/
+│
+├── Assignments/
+│   ├── Assignment_01/
+│   ├── Assignment_02/
+│   └── Assignment_03/
+│
+├── Projects/
+│   ├── Project_01/
+│   ├── Project_02/
+│   └── Project_03/
+│
+├── README.md
+└── .gitignore
+
+
+============================================================
+16. GOLDEN RULE
+============================================================
+
+ONE repository:
+
+Web_Engineering/.git
+
+NOT:
+
+Labs/01/.git
+Labs/02/.git
+Labs/03/.git
+Projects/Project_01/.git
+
+Never run "git init" inside individual labs,
+assignments, or projects.
+
+
+============================================================
+17. THE 5 COMMANDS YOU WILL USE MOST
+============================================================
+
+cd "E:/Semester_05/4. Web_Engineering"
+
+git status
+
+git add .
+
+git commit -m "Your message"
+
+git push
+
+
+============================================================
+END
+============================================================
