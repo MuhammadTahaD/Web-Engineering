@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Taha | Backend Engineer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="hero">
+            <div class="profile">
+                <div class="avatar">MT</div>
+
+                <div>
+                    <h1>Muhammad Taha</h1>
+                    <h2>Backend Engineer</h2>
+
+                    <p class="intro">
+                        MERN Stack Developer & AI Automation Engineer
+                        specializing in scalable backend systems,
+                        REST APIs and workflow automation.
+                    </p>
+                </div>
+            </div>
+
+            <div class="contact">
+                <a href="mailto:muhammad.taha.dandhla@gmail.com">
+                    📧 muhammad.taha.dandhla@gmail.com
+                </a>
+
+                <a href="tel:+923356460508">
+                    📱 +92 335 6460508
+                </a>
+
+                <span>📍 Islamabad, Pakistan</span>
+
+                <a href="https://github.com/MuhammadTahaD" target="_blank">
+                    💻 GitHub
+                </a>
+
+                <a href="https://linkedin.com/in/Muhammad-taha-615670332"
+                   target="_blank">
+                    🔗 LinkedIn
+                </a>
+            </div>
+        </header>
+
+
+        <!-- Main Content -->
+        <main>
+
+            <!-- Professional Summary -->
+            <section class="section">
+                <div class="section-title">
+                    <span>01</span>
+                    <h2>Professional Summary</h2>
+                </div>
+
+                <div class="card summary">
+                    <p>
+                        Backend Engineer specializing in the MERN stack
+                        (MongoDB, Express.js, Node.js) and workflow
+                        automation using n8n. Experienced in building
+                        scalable REST APIs, backend services,
+                        event-driven systems, and voice agent integrations
+                        with a focus on performance and reliability.
+                    </p>
+
+                    <p>
+                        Skilled in developing automation pipelines and API
+                        integrations using n8n and Make.com to streamline
+                        business processes and reduce manual effort.
+                        Familiar with cloud platforms, Docker, and databases
+                        like MongoDB and MySQL.
+                    </p>
+                </div>
+            </section>
+
+
+            <!-- Skills -->
+            <section class="section">
+                <div class="section-title">
+                    <span>02</span>
+                    <h2>Technical Skills</h2>
+                </div>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+                        <div class="icon">💻</div>
+                        <h3>Languages</h3>
+                        <p>JavaScript (Node.js)</p>
+                        <p>Python</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="icon">⚙️</div>
+                        <h3>Backend & Frameworks</h3>
+                        <p>Express.js</p>
+                        <p>ReactJS</p>
+                        <p>REST API</p>
+                        <p>FastAPI</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="icon">☁️</div>
+                        <h3>Cloud & DevOps</h3>
+                        <p>Google Cloud Platform</p>
+                        <p>Docker</p>
+                        <p>Kubernetes</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="icon">🗄️</div>
+                        <h3>Databases</h3>
+                        <p>MongoDB</p>
+                        <p>SQLite</p>
+                        <p>MySQL</p>
+                    </div>
+
+                    <div class="skill-card wide">
+                        <div class="icon">🤖</div>
+                        <h3>Automation & Voice Agents</h3>
+                        <p>
+                            Web Scraping • n8n • Make.com • Retell AI • Vapi
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- Experience -->
+            <section class="section">
+                <div class="section-title">
+                    <span>03</span>
+                    <h2>Professional Experience</h2>
+                </div>
+
+                <div class="timeline">
+
+                    <article class="experience-card">
+
+                        <div class="experience-header">
+                            <div>
+                                <h3>AI Automation Engineer</h3>
+                                <h4>TrillesAI</h4>
+                            </div>
+
+                            <span class="date">
+                                Jan 2026 – Present
+                            </span>
+                        </div>
+
+                        <ul>
+                            <li>
+                                Developed Python and Node.js data extraction
+                                pipelines processing 50,000+ records daily.
+                            </li>
+
+                            <li>
+                                Integrated Airtable, Google Cloud Storage,
+                                Apify and automated CRM workflows with
+                                chatbot integration using n8n and JennyAI.
+                            </li>
+
+                            <li>
+                                Architected asynchronous pipelines and
+                                modular services, reducing scraping
+                                failure rates by 30%.
+                            </li>
+                        </ul>
+
+                    </article>
+
+                </div>
+            </section>
+
+
+            <!-- Projects -->
+            <section class="section">
+                <div class="section-title">
+                    <span>04</span>
+                    <h2>Projects</h2>
+                </div>
+
+                <div class="projects">
+
+                    <article class="project-card">
+
+                        <div class="project-number">
+                            01
+                        </div>
+
+                        <div>
+                            <h3>TrillesAI.com</h3>
+
+                            <span class="project-type">
+                                Company Website | Architecture & Development
+                            </span>
+
+                            <p>
+                                Designed and developed the complete
+                                TrillesAI website including case studies,
+                                team showcase and client contact platform.
+                            </p>
+
+                            <p>
+                                Built a responsive interface aligned with
+                                company branding and structured the website
+                                to effectively present AI solutions,
+                                services and project portfolios.
+                            </p>
+
+                            <div class="tags">
+                                <span>Web Development</span>
+                                <span>Responsive Design</span>
+                                <span>Architecture</span>
+                            </div>
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-number">
+                            02
+                        </div>
+
+                        <div>
+                            <h3>ShopIT</h3>
+
+                            <span class="project-type">
+                                MERN eCommerce Platform + Automation
+                            </span>
+
+                            <p>
+                                Developed a full-stack eCommerce platform
+                                using MongoDB, Express.js, React and Node.js.
+                            </p>
+
+                            <p>
+                                Built secure REST APIs for product
+                                management, authentication, cart and order
+                                processing.
+                            </p>
+
+                            <p>
+                                Integrated n8n automation workflows to
+                                trigger abandoned cart recovery emails.
+                            </p>
+
+                            <div class="tags">
+                                <span>MongoDB</span>
+                                <span>Express</span>
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>n8n</span>
+                            </div>
+                        </div>
+
+                    </article>
+
+                </div>
+            </section>
+
+
+            <!-- Education -->
+            <section class="section">
+                <div class="section-title">
+                    <span>05</span>
+                    <h2>Education</h2>
+                </div>
+
+                <div class="education-card">
+
+                    <div class="education-icon">
+                        🎓
+                    </div>
+
+                    <div>
+                        <h3>Bachelor of Science in Computer Science</h3>
+
+                        <h4>
+                            NUST, Pakistan
+                        </h4>
+
+                        <p>
+                            September 2024 – May 2028
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+
+        <!-- Footer -->
+        <footer>
+            <p>
+                © 2026 Muhammad Taha
+            </p>
+
+            <p>
+                Built with HTML & CSS
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
